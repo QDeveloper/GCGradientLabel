@@ -13,8 +13,8 @@
 		9853D8CA20C52DA0006BEE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9853D8C920C52DA0006BEE94 /* Assets.xcassets */; };
 		9853D8CD20C52DA0006BEE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9853D8CB20C52DA0006BEE94 /* LaunchScreen.storyboard */; };
 		9853D8D020C52DA0006BEE94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9853D8CF20C52DA0006BEE94 /* main.m */; };
-		9853D8DA20C52DA0006BEE94 /* GCGradientLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9853D8D920C52DA0006BEE94 /* GCGradientLabelTests.m */; };
-		9853D8E520C52DA0006BEE94 /* GCGradientLabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9853D8E420C52DA0006BEE94 /* GCGradientLabelUITests.m */; };
+		98E131D120C548CF00C3F9A2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 98E131CF20C548CF00C3F9A2 /* README.md */; };
+		98E131D220C548CF00C3F9A2 /* GradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E131D020C548CF00C3F9A2 /* GradientLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +46,10 @@
 		9853D8CE20C52DA0006BEE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9853D8CF20C52DA0006BEE94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9853D8D520C52DA0006BEE94 /* GCGradientLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCGradientLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9853D8D920C52DA0006BEE94 /* GCGradientLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCGradientLabelTests.m; sourceTree = "<group>"; };
-		9853D8DB20C52DA0006BEE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9853D8E020C52DA0006BEE94 /* GCGradientLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCGradientLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9853D8E420C52DA0006BEE94 /* GCGradientLabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCGradientLabelUITests.m; sourceTree = "<group>"; };
-		9853D8E620C52DA0006BEE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E131CE20C548CF00C3F9A2 /* GradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientLabel.h; sourceTree = "<group>"; };
+		98E131CF20C548CF00C3F9A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		98E131D020C548CF00C3F9A2 /* GradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				9853D8BF20C52D9F006BEE94 /* GCGradientLabel */,
-				9853D8D820C52DA0006BEE94 /* GCGradientLabelTests */,
-				9853D8E320C52DA0006BEE94 /* GCGradientLabelUITests */,
 				9853D8BE20C52D9F006BEE94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +98,7 @@
 		9853D8BF20C52D9F006BEE94 /* GCGradientLabel */ = {
 			isa = PBXGroup;
 			children = (
+				98E131CD20C548CF00C3F9A2 /* GradientLabel */,
 				9853D8C020C52D9F006BEE94 /* AppDelegate.h */,
 				9853D8C120C52D9F006BEE94 /* AppDelegate.m */,
 				9853D8C320C52D9F006BEE94 /* ViewController.h */,
@@ -114,22 +112,14 @@
 			path = GCGradientLabel;
 			sourceTree = "<group>";
 		};
-		9853D8D820C52DA0006BEE94 /* GCGradientLabelTests */ = {
+		98E131CD20C548CF00C3F9A2 /* GradientLabel */ = {
 			isa = PBXGroup;
 			children = (
-				9853D8D920C52DA0006BEE94 /* GCGradientLabelTests.m */,
-				9853D8DB20C52DA0006BEE94 /* Info.plist */,
+				98E131CE20C548CF00C3F9A2 /* GradientLabel.h */,
+				98E131CF20C548CF00C3F9A2 /* README.md */,
+				98E131D020C548CF00C3F9A2 /* GradientLabel.m */,
 			);
-			path = GCGradientLabelTests;
-			sourceTree = "<group>";
-		};
-		9853D8E320C52DA0006BEE94 /* GCGradientLabelUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9853D8E420C52DA0006BEE94 /* GCGradientLabelUITests.m */,
-				9853D8E620C52DA0006BEE94 /* Info.plist */,
-			);
-			path = GCGradientLabelUITests;
+			path = GradientLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +227,7 @@
 			files = (
 				9853D8CD20C52DA0006BEE94 /* LaunchScreen.storyboard in Resources */,
 				9853D8CA20C52DA0006BEE94 /* Assets.xcassets in Resources */,
+				98E131D120C548CF00C3F9A2 /* README.md in Resources */,
 				9853D8C820C52D9F006BEE94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E131D220C548CF00C3F9A2 /* GradientLabel.m in Sources */,
 				9853D8C520C52D9F006BEE94 /* ViewController.m in Sources */,
 				9853D8D020C52DA0006BEE94 /* main.m in Sources */,
 				9853D8C220C52D9F006BEE94 /* AppDelegate.m in Sources */,
@@ -272,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9853D8DA20C52DA0006BEE94 /* GCGradientLabelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9853D8E520C52DA0006BEE94 /* GCGradientLabelUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
