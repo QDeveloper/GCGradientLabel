@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "GradientLabel.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    GradientLabel *label = [[GradientLabel alloc] initWithFrame:CGRectMake(100, 200, 200, 20)];
+    [self.view addSubview:label];
+    
+    label.text = @"GradientLabel";
+    [label setGradientLabelColors:@[(__bridge id)UIColor.redColor.CGColor, (__bridge id)UIColor.blackColor.CGColor]];
+    
 }
 
 
