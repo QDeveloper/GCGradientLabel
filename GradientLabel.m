@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) CAGradientLayer *gradientLayer;
 
+@property (nonatomic, strong) NSArray * colors;//颜色数组
 
 @end
 
@@ -31,21 +32,32 @@
 }
 
 
-- (void) setGradientLabel {
+- (void) setGradientLabelColors: (NSArray *)colors {
     
-    self.label = [[UILabel alloc] init];
-    self.label.text = self.text?:@"渐变字体";
+    self.colors = colors;
+    
+    if (self.label == nil) {
+        self.label = [[UILabel alloc] init];
+        [self addSubview:self.label];
+    }
+    
+    self.label.text = self.text;
     [self.label setFont:self.font?:[UIFont systemFontOfSize:13]];
-    [self.label setTextAlignment:self.textAlignment?:kCTLeftTextAlignment];
-    [self addSubview:self.label];
+    [self.label setTextAlignment:self.textAlignment?:NSTextAlignmentLeft];
     
-
+    // 清理text
+    self.text = @"";
 }
 
 -(void)layoutSubviews {
     [super layoutSubviews];
     
     [self.label setFrame:self.bounds];
+    
+    // 这里必须重新addSublayer才会更新
+    if (self.gradientLayer.sublayers != nil) {
+        [self.gradientLayer removeFromSuperlayer];
+    }
     [self.layer addSublayer:self.gradientLayer];
     self.gradientLayer.mask = self.label.layer;
 }
