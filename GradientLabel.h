@@ -8,20 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GradientLabel : UIView
+@interface GradientLabel : UILabel
 
-@property (nonatomic, strong) NSArray * colors;//颜色数组
-
-@property (nonatomic, strong) UIFont *font;//字体
-
-@property (nonatomic, copy) NSString *text;//文字
-
-@property (nonatomic, assign) NSTextAlignment textAlignment;//对齐方式
-
-@property (nonatomic, assign) CGPoint startPoint;//起始点（0.0~1.0）
-
-@property (nonatomic, assign) CGPoint endPoint;//结束点（0.0~1.0）
-
-- (void) setGradientLabel;
+- (void) setGradientLabelColors: (NSArray *)colors;
 
 @end
